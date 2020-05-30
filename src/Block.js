@@ -18,7 +18,6 @@ const Block = (props) => {
   const headingFlexBoxPercent = headingFlexboxPercentSlider.selectedValue // e.g. 40 for w-40-l
   const paddingLeftRight = paddingLeftRightSlider.selectedValue // e.g. 5 for ph5
   const paddingTopBottom = paddingTopBottomSlider.selectedValue // e.g. 2 for pv2
-  console.log(headingFlexBoxPercent, textFlexBoxPercent)
 
   // Handle the case where the user has turned off the first heading box
   let showHeading = true

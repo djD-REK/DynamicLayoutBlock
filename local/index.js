@@ -1,11 +1,11 @@
 const tenantId = "$YOUR_TENANT_ID"
 
 const localEnvPropOverrides = {
-  heading: "LIMITED QUANTITIES",
-  text: "Custom prop value for local testing",
-  headingFlexboxPercentSlider: { selectedValue: 50 },
-  paddingLeftRightSlider: { selectedValue: 3 },
-  paddingTopBottomSlider: { selectedValue: 3 },
+  heading: "New sale",
+  text: "Clearance items are now 80% off for a limited time",
+  headingFlexboxPercentSlider: { selectedValue: 20 },
+  paddingLeftRightSlider: { selectedValue: 4 },
+  paddingTopBottomSlider: { selectedValue: 1 },
 }
 
 const dataUtils = {

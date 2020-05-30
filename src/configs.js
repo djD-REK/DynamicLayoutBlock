@@ -30,7 +30,7 @@ export const configSchema = {
   section3: {
     type: ElementPropTypes.sectionHeader,
   },
-  headingFlexBoxPercentSlider: {
+  headingFlexboxPercentSlider: {
     label: "Heading Flexbox Percentage on Large Screens",
     type: ElementPropTypes.slider,
   },
@@ -102,7 +102,7 @@ export const defaultConfig = {
   },
   boxShadow: true,
   section3: "Box Spacing Options",
-  headingFlexBoxPercentSlider: {
+  headingFlexboxPercentSlider: {
     labelPrefix: "w-",
     labelStepSize: 10,
     labelSuffix: "-l",

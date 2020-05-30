@@ -6,16 +6,16 @@ import { defaultConfig } from "./configs"
 const Block = (props) => {
   const classes = StyleSheet.create(getStyles(props))
   const {
-    joinClasses,
+    joinClasses, // Helper function to combine Aphrodite & Atomic CSS classes
     heading,
     text,
-    headingFlexBoxPercentSlider,
+    headingFlexboxPercentSlider,
     paddingLeftRightSlider,
     paddingTopBottomSlider,
   } = props
 
   // Extract the Atomic CSS classes for the spacing options
-  const headingFlexBoxPercent = headingFlexBoxPercentSlider.selectedValue // e.g. 40 for w-40-l
+  const headingFlexBoxPercent = headingFlexboxPercentSlider.selectedValue // e.g. 40 for w-40-l
   const paddingLeftRight = paddingLeftRightSlider.selectedValue // e.g. 5 for ph5
   const paddingTopBottom = paddingTopBottomSlider.selectedValue // e.g. 2 for pv2
   console.log(headingFlexBoxPercent, textFlexBoxPercent)

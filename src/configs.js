@@ -70,10 +70,6 @@ export const configSchema = {
   },
 }
 
-// Set up default configuration for dateRange picker (Sales Dates)
-const today = new Date() // start date
-const nextWeek = new Date() // end date
-nextWeek.setDate(nextWeek.getDate() + 7)
 export const defaultConfig = {
   section1: "Background Gradient",
   backgroundColorCenter: "rgba(0,0,0,1)",

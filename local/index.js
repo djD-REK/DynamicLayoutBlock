@@ -1,10 +1,15 @@
 const tenantId = "$YOUR_TENANT_ID"
 
 const localEnvPropOverrides = {
-  heading: "New sale",
-  text: "Clearance items are now 80% off for a limited time",
-  headingFlexboxPercentSlider: { selectedValue: 20 },
-  paddingLeftRightSlider: { selectedValue: 4 },
+  // heading: "PREVIEW THE SALE",
+  // heading: "LIMITED QUANTITIES",
+  // Change to this line to turn off the heading:
+  heading: "(Turn off heading)",
+  // text: "Act now while supplies last!",
+  // text: "Clearance items are now 80% off for a limited time",
+  text: "Brand new products now available",
+  headingFlexboxPercentSlider: { selectedValue: 50 },
+  paddingLeftRightSlider: { selectedValue: 3 },
   paddingTopBottomSlider: { selectedValue: 1 },
 }
 

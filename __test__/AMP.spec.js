@@ -7,7 +7,7 @@ import {
 import { block as Block, defaultConfig } from "../src"
 
 let props
-describe("The Block When Loaded Over AMP", () => {
+describe("The Block", () => {
   beforeEach(() => {
     props = {
       data: {},
@@ -22,7 +22,6 @@ describe("The Block When Loaded Over AMP", () => {
   describe("when there is no custom data", () => {
     it("should render the block with the default content", () => {
       const wrapper = mount(<Block {...props} />)
-      // Replace expect(wrapper.text()).toBe(customText) with:
       expect(wrapper.text()).toBe(defaultConfig.heading + defaultConfig.text)
     })
   })
@@ -33,8 +32,15 @@ describe("The Block When Loaded Over AMP", () => {
       const wrapper = mount(
         <Block {...props} heading={customHeading} text={customText} />
       )
-      // Replace expect(wrapper.text()).toBe(customText) with:
       expect(wrapper.text()).toBe(customHeading + customText)
+    })
+    it("should render only the text when heading is off", () => {
+      const customHeading = "(Turn off heading)"
+      const customText = "Custom Block Text"
+      const wrapper = mount(
+        <Block {...props} heading={customHeading} text={customText} />
+      )
+      expect(wrapper.text()).toBe(customText)
     })
   })
 })

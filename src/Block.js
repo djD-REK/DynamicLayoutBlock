@@ -16,14 +16,21 @@ const Block = (props) => {
 
   // Extract the Atomic CSS classes for the spacing options
   const headingFlexBoxPercent = headingFlexBoxPercentSlider.selectedValue // e.g. 40 for w-40-l
-  const textFlexBoxPercent = 100 - headingFlexBoxPercent
   const paddingLeftRight = paddingLeftRightSlider.selectedValue // e.g. 5 for ph5
   const paddingTopBottom = paddingTopBottomSlider.selectedValue // e.g. 2 for pv2
   console.log(headingFlexBoxPercent, textFlexBoxPercent)
 
+  // Handle the case where the user has turned off the first heading box
+  let showHeading = true
+  let textFlexBoxPercent = 100 - headingFlexBoxPercent // e.g. 60 for w-60-l
+  if (heading === "(Turn off heading)") {
+    showHeading = false
+    textFlexBoxPercent = 100 // e.g. 100 for w-100-l
+  }
+
   return (
     <div className="flex flex-wrap items-center self-center justify-center tc">
-      {heading !== "(Turn off heading)" && (
+      {showHeading && (
         <div
           className={`w-100 w-${headingFlexBoxPercent}-l ph${paddingLeftRight} pv${paddingTopBottom}`}
         >

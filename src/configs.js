@@ -19,7 +19,11 @@ export const configSchema = {
     label: "Border Color",
     type: ElementPropTypes.color,
   },
-  borderRadius: {
+  borderWidthSlider: {
+    label: "Border Width (px)",
+    type: ElementPropTypes.slider,
+  },
+  borderRadiusSlider: {
     label: "Border Radius (px)",
     type: ElementPropTypes.slider,
   },
@@ -78,7 +82,7 @@ export const defaultConfig = {
   borderColor: "rgba(255,209,220)",
   borderWidthSlider: {
     labelPrefix: "",
-    labelStepSize: 1,
+    labelStepSize: 5,
     labelSuffix: "px",
     min: 0,
     max: 10,
@@ -88,7 +92,7 @@ export const defaultConfig = {
   },
   borderRadiusSlider: {
     labelPrefix: "",
-    labelStepSize: 1,
+    labelStepSize: 5,
     labelSuffix: "px",
     min: 0,
     max: 50,

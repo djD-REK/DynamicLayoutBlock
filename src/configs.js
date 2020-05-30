@@ -69,7 +69,7 @@ export const configSchema = {
     type: ElementPropTypes.color,
   },
   fontSize: {
-    label: "Font Size (px)",
+    label: "Font Size (rem)",
     type: ElementPropTypes.number,
   },
 }

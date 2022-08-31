@@ -11,7 +11,7 @@
   "author": "Volusion, LLC",
   "license": "MIT",
   "dependencies": {
-    "moment-timezone": "^0.5.31"
+    "moment-timezone": "^0.5.35"
   },
   "devDependencies": {
     "@volusion/element-block-scripts": "^2.2.3",
